@@ -1,0 +1,349 @@
+/* ===============  GLOBAL  =============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #d1ce0d;
+    --text: #222;
+    --muted: #777;
+    --light: #f8f9fa;
+    --border: #e5e5e5;
+    --bg-footer: #f4f5f5;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===============  NAVBAR  =============== */
+.navbar {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #faf4ed; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.nav-links a:hover {
+    color: var(--green);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: var(--muted);
+    transition: .3s;
+}
+
+.social-icon:hover {
+    background-color: var(--green);
+    color: #fff;
+    border-color: var(--green);
+}
+
+/* ===============  HERO BANNER  =============== */
+.hero {
+    background-color: #f7efe7;
+    margin-top: 10px;
+}
+
+.hero .container {
+    padding: 20px 0 30px;
+}
+
+.hero-banner {
+    width: 100%;
+    height: 260px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===============  CATEGORIES  =============== */
+.categories {
+    padding: 25px 0 15px;
+}
+
+.categories h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.category-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.category-card {
+    position: relative;
+    width: 150px;
+    height: 120px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-name-main {
+    position: absolute;
+    bottom: 5px;
+    left: 8px;
+    right: 8px;
+    font-size: 13px;
+    color: #fff;
+}
+
+/* اسم صغير تحت الصور */
+.category-name {
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* ===============  PRODUCTS GRID  =============== */
+.products {
+    padding: 10px 0 40px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.product-card {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.product-category {
+    color: var(--green);
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+
+.product-name {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.product-price {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.product-rating {
+    font-size: 12px;
+    color: #f2b01e;
+}
+
+/* ===============  APP FOOTER SECTION  =============== */
+.app-section {
+    background-color: var(--bg-footer);
+    padding: 30px 0;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.app-left h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.app-left p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.app-form {
+    display: flex;
+    gap: 10px;
+}
+
+.app-form input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+    font-size: 14px;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--green);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.app-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.payment-logos img,
+.store-logos img {
+    height: 22px;
+    margin-right: 8px;
+}
+
+/* ===============  AUTH PAGES (LOGIN / REGISTER)  =============== */
+.auth-main {
+    padding: 40px 0 60px;
+}
+
+.auth-box {
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.auth-box h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+    text-transform: lowercase;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+    font-size: 14px;
+}
+
+.auth-btn {
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: var(--green);
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.auth-btn:hover {
+    opacity: 0.9;
+}
