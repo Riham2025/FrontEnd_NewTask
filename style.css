@@ -177,7 +177,7 @@ ul {
     color: #fff;
 }
 
-/* اسم صغير تحت الصور */
+
 .category-name {
     font-size: 13px;
     color: var(--muted);
@@ -346,4 +346,143 @@ ul {
 
 .auth-btn:hover {
     opacity: 0.9;
+}
+
+/* ===============  RESPONSIVE  =============== */
+
+
+@media (max-width: 992px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .navbar-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 8px 0;
+    }
+
+    .nav-left {
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .hero-banner {
+        height: 220px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .auth-box {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 96%;
+    }
+
+   
+    .navbar {
+        position: static;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .nav-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .nav-right {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .hero .container {
+        padding-top: 10px;
+    }
+
+    .hero-banner {
+        height: 190px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .product-card {
+        font-size: 12px;
+    }
+
+    .app-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .app-bottom {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .auth-box {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .logo span {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        font-size: 12px;
+    }
+
+    .hero-banner {
+        height: 160px;
+    }
+
+    .products {
+        padding-bottom: 20px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .categories h2 {
+        font-size: 18px;
+    }
 }
