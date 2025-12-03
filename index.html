@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-     <!-- Library for Social Media Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- title  -->
+    <title>FreshCart - Home</title>
 
+    <!-- Favicon () -->
+   <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
@@ -17,41 +25,33 @@
 
             <div class="nav-left">
                 <div class="logo">
-                    
-                    <img src="images/freshcart-logo.svg" alt="FreshCart logo">
-                   
+                    <img src="images/freshcart-logo.svg" alt="FreshCart logo" />
                 </div>
 
                 <div class="nav-links">
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="active">Home</a>
                     <a href="#">Cart</a>
-                    <a href="#">Products</a>
-                    <a href="#">Categories</a>
+                    <a href="#">Wish List</a>
                     <a href="#">Brands</a>
                 </div>
             </div>
 
             <div class="nav-right">
-                <!--  -->
                 <a href="https://instagram.com" target="_blank" class="social-icon">
-    <i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://facebook.com" target="_blank" class="social-icon">
-    <i class="fab fa-facebook-f"></i>
-</a>
-
-<a href="https://twitter.com" target="_blank" class="social-icon">
-    <i class="fab fa-twitter"></i>
-</a>
-
-<a href="https://linkedin.com" target="_blank" class="social-icon">
-    <i class="fab fa-linkedin-in"></i>
-</a>
-
-<a href="https://youtube.com" target="_blank" class="social-icon">
-    <i class="fab fa-youtube"></i>
-</a>
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
 
                 <a href="login.html">Login</a>
                 <a href="register.html">Register</a>
@@ -60,140 +60,85 @@
         </div>
     </nav>
 
-    <!-- ========== HERO SECTION ========== -->
+
+   <!-- ========== HERO SECTION ( API) ========== -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-banner">
-               
-                <img src="images/cokol.PNG" alt="Hero banner">
-            </div>
-        </div>
-    </section>
+  <div class="container hero-layout">
 
-    <!-- ========== CATEGORIES ========== -->
-    <section class="categories">
-        <div class="container">
-            <h2>Shop Popular Categories</h2>
+    <!-- Left big image (fruits) -->
+    <div class="hero-left">
+      <img
+        id="heroLeftImg"
+        src="images/1.PNG"
+        alt="Fresh groceries"
+      />
+    </div>
 
-            <div class="category-list">
-                <!--  -->
-                <div>
-                    <div class="category-card">
-                        <img src="images/product-4.jpeg" alt="Children books">
-                        <div class="category-name-main">Children's books</div>
-                    </div>
-                    <div class="category-name">Electronics</div>
-                </div>
+    <!-- Right column: two images + featured box -->
+    <div class="hero-right">
+      <div class="hero-right-top">
+        <img
+          id="heroRightTopImg"
+          src="images/2.PNG"
+          alt="Top hero product"
+        />
+      </div>
 
-                <div>
-                    <div class="category-card">
-                        <img src="images/product-1.webp" alt="Mobiles">
-                        <div class="category-name-main">Mobiles</div>
-                    </div>
-                    <div class="category-name">Mobiles</div>
-                </div>
+      <div class="hero-right-bottom">
+        <img
+          id="heroRightBottomImg"
+          src="images/3.PNG"
+          alt="Bottom hero product"
+        />
+      </div>
 
-                <div>
-                    <div class="category-card">
-                        <img src="images/product-3.jpeg" alt="Men">
-                        <div class="category-name-main">Men's sportswear</div>
-                    </div>
-                    <div class="category-name">Men</div>
-                </div>
+      
+    </div>
 
-                <div>
-                    <div class="category-card">
-                        <img src="images/product-5.jpeg" alt="Woman">
-                        <div class="category-name-main">Woman fashion</div>
-                    </div>
-                    <div class="category-name">Woman</div>
-                </div>
+  </div>
+</section>
 
-                <div>
-                    <div class="category-card">
-                        <img src="images/product-2.webp" alt="Home">
-                        <div class="category-name-main">Home</div>
-                    </div>
-                    <div class="category-name">Home</div>
-                </div>
 
-                <div>
-                    <div class="category-card">
-                        <img src="images/product-6.avif" alt="Appliances">
-                        <div class="category-name-main">Appliances</div>
-                    </div>
-                    <div class="category-name">Appliances</div>
-                </div>
-            </div>
-        </div>
-    </section>
+           <!-- ========== CATALOG (CATEGORIES FROM API) ========== -->
+    <!-- ========== CATALOG (FROM API) ========== -->
+<section class="catalog-section">
+  <h2 class="section-title">Categories we offer:</h2>
 
-    <!-- ========== PRODUCTS GRID ========== -->
+  <!-- نص التحميل -->
+  <div id="catalogLoader" class="loading">Loading catalog...</div>
+
+  <!--  JS) -->
+  <div class="catalog-slider" id="catalogSlider" style="display: none;">
+    <!-- <button class="catalog-arrow catalog-prev" id="catalogPrev">‹</button> --> 
+
+
+    <div class="catalog-window" id="catalogWindow">
+      <div class="catalog-row" id="catalogRow">
+        <!-- cards from JS -->
+      </div>
+    </div>
+
+    <!-- <button class="catalog-arrow catalog-next" id="catalogNext">›</button> --> 
+  </div>
+</section>
+
+
+
+
+
+
+    <!-- ========== PRODUCTS FROM API ========== -->
     <section class="products">
         <div class="container">
+            <h2>Featured products:</h2>
 
-            <div class="products-grid">
-                <!-- Product 1 -->
-                <article class="product-card">
-                    <img src="images/PS5 DualSense.jpeg" alt="PS5 DualSense">
-                    <div class="product-category">Electronics</div>
-                    <div class="product-name">PS5 DualSense</div>
-                    <div class="product-price">1045 EGP</div>
-                    <div class="product-rating">★ 4.9</div>
-                </article>
-
-                <!-- Product 2 -->
-                <article class="product-card">
-                    <img src="images/Router.jpeg" alt="Router">
-                    <div class="product-category">Electronics</div>
-                    <div class="product-name">Archer VR300</div>
-                    <div class="product-price">1699 EGP</div>
-                    <div class="product-rating">★ 4.5</div>
-                </article>
-
-                <!-- Product 3 -->
-                <article class="product-card">
-                    <img src="images/Men pyjama.jpeg" alt="Men pyjama">
-                    <div class="product-category">Men</div>
-                    <div class="product-name">Men's Sleepwear</div>
-                    <div class="product-price">799 EGP</div>
-                    <div class="product-rating">★ 4.3</div>
-                </article>
-
-                <!-- Product 4 -->
-                <article class="product-card">
-                    <img src="images/Sweater.jpeg" alt="Sweater">
-                    <div class="product-category">Men</div>
-                    <div class="product-name">Classic Sweater</div>
-                    <div class="product-price">999 EGP</div>
-                    <div class="product-rating">★ 4.6</div>
-                </article>
-
-                <!-- Product 5 -->
-                <article class="product-card">
-                    <img src="images/Women pants.jpeg" alt="Women pants">
-                    <div class="product-category">Woman</div>
-                    <div class="product-name">Jogger Pants</div>
-                    <div class="product-price">699 EGP</div>
-                    <div class="product-rating">★ 4.2</div>
-                </article>
-
-                <!--  -->
-                <article class="product-card">
-                    <img src="images/Smart TV.jpg" alt="Smart TV">
-                    <div class="product-category">Electronics</div>
-                    <div class="product-name">Smart TV 43 Inch</div>
-                    <div class="product-price">8999 EGP</div>
-                    <div class="product-rating">★ 4.5</div>
-                </article>
-
-                <!--  -->
+            <div id="productsGrid" class="products-grid">
+                
             </div>
-
         </div>
     </section>
 
-   
-
+    <!-- JS -->
+    <script src="./script.js"></script>
 </body>
 </html>

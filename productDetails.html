@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshCart - Product Details</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <!--   navbar -->
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="images/freshcart-logo.svg" alt="FreshCart logo" />
+                </div>
+
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="#">Cart</a>
+                    <a href="#">Wish List</a>
+                    <a href="#">Brands</a>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- product-details -->
+    <main class="product-details-main">
+    <div class="container">
+
+      <!-- detailsLoader -->
+      <div id="detailsLoader" class="details-loader-box">
+        <div class="spinner"></div>
+        <p class="loading">Loading product...</p>
+      </div>
+
+      <!-- product-details-card -->
+      <div id="detailsCard" class="product-details-card" style="display: none;">
+        <div class="details-layout">
+          <div class="details-image">
+            <img id="detailsImg" src="" alt="">
+          </div>
+
+          <div class="details-info">
+            <h1 id="detailsTitle"></h1>
+            <div id="detailsBrand" class="details-brand"></div>
+            <div id="detailsCategory" class="details-category"></div>
+            <div id="detailsPrice" class="details-price"></div>
+            <div id="detailsRating" class="details-rating"></div>
+            <p id="detailsDesc" class="details-description"></p>
+
+            <button class="btn-full">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+    <script src="./productDetails.js"></script>
+</body>
+</html>
